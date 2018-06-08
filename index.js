@@ -87,7 +87,7 @@ function getResults(game, player) {
 function execute() {
 	getResults("alttphacks", "estragon0").done( function {
 		results.sort(function(a, b) { return ((a.date > b.date) ? -1 : ((a.date < b.date) ? 1 : 0)); });
-		summaryStats = {stats: {"min": 0, "max": 0, "diff": 0}}
+		summaryStats = {stats: {"min": 0, "max": 0, "diff": 0}};
 		
 		$.each(results, function(result) {
 			summaryStats.min += result.stats.min;
