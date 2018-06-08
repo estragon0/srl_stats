@@ -96,7 +96,7 @@ function execute() {
 			createResultRow(result).appendTo(resultsDOM);
 		});
 		createResultRow(summaryStats).addClass("summary").appendTo(resultsDOM);
-	}).fail( function {
+	}).fail( function() {
 		// TODO: pls
 		alert("Query failed");
 	});
